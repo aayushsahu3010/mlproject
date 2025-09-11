@@ -6,10 +6,11 @@ scikit-learn
 catboost
 xgboost
 dill
-Flask
+flask
 gunicorn
 catboost
 # + your other libraries already present
 
 
-# -e .
+
+-e .
