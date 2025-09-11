@@ -1,0 +1,8 @@
+runtime: python310
+
+entrypoint: gunicorn -b :$PORT application:app
+
+instance_class: F2   # optional (gives 2 CPU, 512MB RAM, good for ML models)
+
+env_variables:
+  MODEL_PATH: "artifacts/model.pkl"   # adjust if your model filename is different
